@@ -1,0 +1,26 @@
+// 变量 
+@white: #fffdf1;
+@blue: #0f6b9a;
+@red: #af0b12;
+@orange: #ec7f6a;
+@yellow: #c1bd25;
+@green: #71be30;
+@mid-blue: #0c9ed7;
+@light-blue: #61b6f6;
+@light-red: #e96d6d;
+@light-orange: #f0ae9e;
+@light-yellow: #f8dd10;
+@light-green: #b8d018;
+
+// 兼容性圆角
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+.border-radius-change(@top, @right, @bottom, @left) {
+  -webkit-border-radius: @arguments;
+     -moz-border-radius: @arguments;
+          border-radius: @arguments;
+}
+
